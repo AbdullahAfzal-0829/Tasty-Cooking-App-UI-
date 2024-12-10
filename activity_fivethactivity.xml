@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#10596c">
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:text="3 of 3"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/progress"
+        android:layout_margin="16dp"
+        android:progress="100"
+        android:progressTint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personalize your experience\nby creating an account."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="4dp"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We'll recommend recipes based on your \n preferences."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/pic3"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E91E63"
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+</RelativeLayout>
